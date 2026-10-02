@@ -1,0 +1,1 @@
+INSERT INTO Clients (id_client, fio, phone) VALUES (1, 'Сидоров Сидор', '+70000000000');

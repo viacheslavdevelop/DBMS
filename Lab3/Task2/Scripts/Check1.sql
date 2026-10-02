@@ -1,0 +1,1 @@
+INSERT INTO Halls (id_hall, name, capacity) VALUES (3, 'Малый зал', -10);

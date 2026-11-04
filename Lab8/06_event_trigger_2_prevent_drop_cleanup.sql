@@ -1,0 +1,1 @@
+DROP EVENT TRIGGER ev_trg_prevent_drop_table;

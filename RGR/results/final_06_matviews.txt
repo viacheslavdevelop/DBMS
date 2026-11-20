@@ -1,0 +1,11 @@
+SET
+psql:sql/06_matviews.sql:3: NOTICE:  materialized view "mv_monthly_sales" does not exist, skipping
+DROP MATERIALIZED VIEW
+psql:sql/06_matviews.sql:4: NOTICE:  materialized view "mv_product_stock" does not exist, skipping
+DROP MATERIALIZED VIEW
+SELECT 15
+CREATE INDEX
+SELECT 37
+CREATE INDEX
+REFRESH MATERIALIZED VIEW
+REFRESH MATERIALIZED VIEW

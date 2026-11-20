@@ -1,0 +1,24 @@
+                                                                  QUERY PLAN                                                                   
+-----------------------------------------------------------------------------------------------------------------------------------------------
+ Sort  (cost=10.58..10.59 rows=1 width=53) (actual time=0.088..0.089 rows=3.00 loops=1)
+   Sort Key: d.delivery_date, d.delivery_number
+   Sort Method: quicksort  Memory: 25kB
+   Buffers: shared hit=10
+   ->  Nested Loop  (cost=0.14..10.57 rows=1 width=53) (actual time=0.058..0.065 rows=3.00 loops=1)
+         Join Filter: (d.id_supplier = s.id_supplier)
+         Rows Removed by Join Filter: 6
+         Buffers: shared hit=4
+         ->  Index Scan using suppliers_name_key on suppliers s  (cost=0.14..8.16 rows=1 width=4) (actual time=0.046..0.047 rows=1.00 loops=1)
+               Index Cond: ((name)::text = 'ООО «Нефтеснаб»'::text)
+               Index Searches: 1
+               Buffers: shared hit=2
+         ->  Seq Scan on deliveries d  (cost=0.00..2.30 rows=9 width=57) (actual time=0.009..0.014 rows=9.00 loops=1)
+               Filter: ((delivery_date >= '2025-09-01'::date) AND (delivery_date <= '2025-12-31'::date))
+               Rows Removed by Filter: 11
+               Buffers: shared hit=2
+ Planning:
+   Buffers: shared hit=296
+ Planning Time: 1.023 ms
+ Execution Time: 0.133 ms
+(20 строк)
+

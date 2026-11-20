@@ -1,0 +1,17 @@
+                  Список таблиц
+ Схема  |        Имя        |   Тип   | Владелец 
+--------+-------------------+---------+----------
+ public | clients           | таблица | admin
+ public | deliveries        | таблица | admin
+ public | delivery_items    | таблица | admin
+ public | price_history     | таблица | admin
+ public | products          | таблица | admin
+ public | reserve_forecasts | таблица | admin
+ public | shipment_items    | таблица | admin
+ public | shipments         | таблица | admin
+ public | stock_movements   | таблица | admin
+ public | suppliers         | таблица | admin
+ public | tank_measurements | таблица | admin
+ public | tanks             | таблица | admin
+(12 строк)
+

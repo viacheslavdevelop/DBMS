@@ -1,9 +1,0 @@
-SET
-CREATE FUNCTION
-CREATE FUNCTION
-psql:sql/04_triggers.sql:293: NOTICE:  trigger "trg_delivery_items_stock" for relation "delivery_items" does not exist, skipping
-DROP TRIGGER
-CREATE TRIGGER
-psql:sql/04_triggers.sql:298: NOTICE:  trigger "trg_shipment_items_stock" for relation "shipment_items" does not exist, skipping
-DROP TRIGGER
-CREATE TRIGGER

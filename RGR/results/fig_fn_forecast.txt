@@ -1,5 +1,0 @@
- forecast_date | horizon_days | current_stock | avg_daily_consumption | predicted_consumption | predicted_reserve 
----------------+--------------+---------------+-----------------------+-----------------------+-------------------
- 2026-06-30    |           30 |     10300.000 |                93.333 |              2799.990 |          7500.010
-(1 строка)
-

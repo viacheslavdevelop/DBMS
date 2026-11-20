@@ -1,5 +1,0 @@
-  database  | encoding |  collation  
-------------+----------+-------------
- oildepotdb | UTF8     | en_US.UTF-8
-(1 строка)
-
